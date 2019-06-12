@@ -9,124 +9,39 @@
 
     <title>Amazon Early Insights Hackathon</title>
 
-    <href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.
-    css" crossorigin="anonymous">
+    <href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    <script src="EarlyInsight.js"></script>
-
-    <link rel ="searchbar" href="searchbar.css">
-
+    <script src="Earlyinsight.js"></script>
     <link rel="stylesheet" href="css/EarlyInsights.css">
-
-    <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    * {box-sizing: border-box;}
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .topnav {
-      overflow: hidden;
-      background-color: #e9e9e900;
-    }
-
-    .topnav a {
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .topnav a.active {
-      background-color: #2196F3;
-      color: white;
-    }
-
-    .topnav .search-container {
-      float: right;
-    }
-
-    .topnav input[type=text] {
-      padding: 6px;
-      margin-top: 8px;
-      font-size: 17px;
-      border: none;
-    }
-
-    .topnav .search-container button {
-      float: right;
-      padding: 6px 10px;
-      margin-top: 8px;
-      margin-right: 16px;
-      background: #ddd;
-      font-size: 17px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .topnav .search-container button:hover {
-      background: #ccc;
-    }
-
-    @media screen and (max-width: 600px) {
-      .topnav .search-container {
-        float: none;
-      }
-      .topnav a, .topnav input[type=text], .topnav .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-      }
-      .topnav input[type=text] {
-        border: 1px solid #ccc;
-      }
-    }
-    </style>
-    </head>
-    <body>
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.">
-    </body>
   </head>
 
   <body>
 
-    <div class="column" style="background:rgba(0,0,0,0.5);">
-          <h3>Amazon Prime Video</h3>
-          <div class="centered" width="100%">   <video width="100%" height="100%" controls>
-              <source src="EarlyInsightsVideo.mp4" type="video/mp4">
-              </video>
-
-      </video></div>
-</div>
-<!--      <div class="column" style="background:rgba(0,0,0,0.5);">
-          <h3>Amazon Prime Video</h3>
-          <p>
-            <video src="EarlyInsightsVideo.MP4" alt="EarlyInsightsVideo" width="100%">
-          <div class="centered">   <video width="120" height="90" controls >
-
-          </p>
+    <form class="navbar-form" style="width: 200px">
+      <div class="input-group">
+        <input type="text" class="form-control" id="submit"/>
+        <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" />
+        <button class="input-group-addon" >
+          <i class="scenesSearch" style="color: black" onclick="searchScenes()"> Search </i>
+        </button>
+          
       </div>
+    </form>
 
-    <div class="Navigation-bar">
-      <ul class="Navigation">
-        <li><a href="index.html">'Alexis-Style' Search Button</a></li>
-      </ul>
-    </div> -->
+ 
+
+    <div class="column" style="background:rgba(0,0,0,0.5);">
+      <h3>Amazon Prime Video</h3>
+      <div class="centered" width="100%">
+        <video width="100%" height="100%" controls>
+          <source src="../AmazonEarlyInsights.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
 
   </body>
+
 </html>
