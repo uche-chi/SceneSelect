@@ -1,0 +1,102 @@
+body{
+background-color:lightgreen;
+font-family: fantasy;
+padding-left: 67px;
+padding-right: 67px;
+
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.91) 30%, rgba(162,244,104,0.74) 83%, rgba(132,240,56,0.74) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(30%, rgba(255,255,255,0.91)), color-stop(83%, rgba(162,244,104,0.74)), color-stop(100%, rgba(132,240,56,0.74)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.91) 30%, rgba(162,244,104,0.74) 83%, rgba(132,240,56,0.74) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.91) 30%, rgba(162,244,104,0.74) 83%, rgba(132,240,56,0.74) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.91) 30%, rgba(162,244,104,0.74) 83%, rgba(132,240,56,0.74) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.91) 30%, rgba(162,244,104,0.74) 83%, rgba(132,240,56,0.74) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#84f038', GradientType=1 );
+}
+
+.heading{
+position: relative;
+text-align: center;
+color: #0B3B0B
+}
+.centered{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 200px;
+}
+*{
+  box-sizing: border-box;
+}
+h3{
+  text-align: center;
+  font-size: 50px;
+}
+
+p {
+  font-size: 39px;
+  text-align: justify;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 1050px;
+  align-items: center;
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 35px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row_2:after {
+  content: normal;
+  display: table;
+  clear: both;
+}
+.row_3:after{
+  content: normal;
+  display: table;
+  clear: both;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding-left: 350px;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  text-align: center;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: fantasy;
+}
+
+li a:hover {
+  background-color: #111;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
