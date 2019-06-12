@@ -2,8 +2,8 @@ var scenes =
     [
         {
             time: "0.00", 
-            description: "break-up",
-            actors: ["susan", "Jem"],
+            description: "Break-Up",
+            actors: ["Susan", "Jem"],
             actions: ["sighing", "leaving", "breaking up", "screaming", "door slam"],
             objects: ["door"],
             screenshot: "../PrimeVideo/Screenshots/scene1.png"
@@ -11,7 +11,7 @@ var scenes =
 
         {
             time: "0.57",
-            description: "meeting",
+            description: "Meeting",
             actors: ["Meghan", "Susan", "Celina"],
             actions: ["meeting", "laughing", "talking"],
             objects: ["drink", "smoothie", "laptop", "table", "chair"],
@@ -20,7 +20,7 @@ var scenes =
 
         {
             time: "2.41",
-            description: "date",
+            description: "Date",
             actors: ["Meghan", "Susan", "Celina"],
             actions: ["talking", "drinking", "laughing", "hugging"],
             objects: ["drink"],
@@ -29,7 +29,7 @@ var scenes =
 
         {
             time: "3.23",
-            description: "proposal",
+            description: "Proposal",
             actors: ["Meghan", "Susan", "Celina"],
             actions: ["proposing", "marrying", "crying", "hugging"],
             objects: ["ring"],
@@ -38,7 +38,7 @@ var scenes =
 
         {
             time: "3.51",
-            description: "murder",
+            description: "Murder",
             actors: ["Meghan", "Susan", "Celina", "Jem"],
             actions: ["laughing", "talking", "killing", "murdering", "screaming", "crying"],
             objects: ["knife", "blood"],
@@ -62,9 +62,7 @@ function searchScenes() {
     for (j = 0; j < scenes[i].actors.length; j++) {
       
       if (input.includes(scenes[i].actors[j].toLowerCase())) {
-      
         finalScenes.push(scenes[i]);
-        
       }
     }
     for (j = 0; j < scenes[i].actions.length; j++) {
@@ -72,7 +70,6 @@ function searchScenes() {
         finalScenes.push(scenes[i]);
       }
     }
-
     for (j = 0; j < scenes[i].objects.length; j++) {
       if (input.includes(scenes[i].objects[j].toLowerCase())) {
         finalScenes.push(scenes[i]);
@@ -80,8 +77,20 @@ function searchScenes() {
     }
   }
 
-  alert("<p>"+finalScenes[0].description+"</p>");
- 
-  document.write("<img src="+finalScenes[0].screenshot+" width= 50% height= 50%>");
+
+  for (i = 0; i < finalScenes.length; i++) {
+    document.write("<figure><img src=" + finalScenes[i].screenshot + " width= 30% height= 30% style=padding:5px;><figcaption>"+finalScenes[i].description+"</figcaption></figure>");
+    
+    /*var desc = finalScenes[i].description;
+    document.write(desc.bold());
+
+    //document.write(finalScenes[i].description);
+
+    
+    text = finalScenes[i].description;
+    getDiv = document.getElementById('scDescriptions');
+    */
+    
+  }
 
 }
