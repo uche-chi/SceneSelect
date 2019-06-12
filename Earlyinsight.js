@@ -79,6 +79,7 @@ function searchScenes() {
 
 
   for (i = 0; i < finalScenes.length; i++) {
+    
     document.write("<figure><img src=" + finalScenes[i].screenshot + " width= 30% height= 30% style=padding:5px;><figcaption>"+finalScenes[i].description+"</figcaption></figure>");
     
     /*var desc = finalScenes[i].description;
