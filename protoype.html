@@ -6,42 +6,45 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Amazon Early Insights Hackathon</title>
-
-    <href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-
+    <title>Amazon Prime</title>
     <script src="Earlyinsight.js"></script>
-    <link rel="stylesheet" href="css/EarlyInsights.css">
+    <link rel="stylesheet" type="text/css" href="EarlyInsights.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
 
   <body>
 
-    <form class="navbar-form" style="width: 200px">
-      <div class="input-group">
-        <input type="text" class="form-control" id="submit"/>
-        <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" />
-        <button class="input-group-addon" >
-          <i class="scenesSearch" style="color: black" onclick="searchScenes()"> Search </i>
-        </button>
-          
-      </div>
+    <a href=https://www.primevideo.com>
+      <img alt="PrimeVideo" src="../PrimeVideo/logo.png" style="float:left; width:10%; height:6%; margin-left:48px; margin-top: 15px">
+    </a>
+    <br><br>
+    <h1>An Original Film</h1>
+    <h2>a short sketch</h2>
+
+    <form class="navbarForm" style="margin:auto;max-width:200px;float:right; padding-bottom: 20px">
+        <input type="text" class="text" id="submit" placeholder="Search a Scene"/>
+        <button class="search" id="searchButton" onclick="searchScenes()"><i class="fa fa-search"></i></button>
     </form>
 
- 
-
-    <div class="column" style="background:rgba(0,0,0,0.5);">
-      <h3>Amazon Prime Video</h3>
-      <div class="centered" width="100%">
-        <video width="100%" height="100%" controls>
-          <source src="../AmazonEarlyInsights.mp4" type="video/mp4">
+    <div class="videoWrapper">
+        <video width="900" height="500" controls>
+            <source src="../AmazonEarlyInsights.mp4" type="video/mp4">
         </video>
-      </div>
     </div>
 
+    <div class="bottomCreds">
+      <a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890" style="text-decoration:none; color:#FFA728">Terms and Privacy Notice</a> &nbsp;
+      <a href="https://www.primevideo.com/help/contact-us" style="text-decoration:none; color:#FFA728">Send us feedback</a> &nbsp;
+      <a href="https://www.primevideo.com/help/ref=atv_ftr_hp" style="text-decoration:none; color:#FFA728">Help</a> &nbsp;
+      <p style="color:#737373">© 2019, TEAMNAME</p>
+    </div>
+
+  <!--
+    <img src="../PrimeVideo/Screenshots/scene1.png" onclick="loadVideo1()" value="Load Video 1" />
+    <img src="../PrimeVideo/Screenshots/scene2.png" onclick="loadVideo2()" value="Load Video 2" />
+    <img src="../PrimeVideo/Screenshots/scene3.png" onclick="loadVideo3()" value="Load Video 3" />
+  -->
   </body>
 
 </html>
