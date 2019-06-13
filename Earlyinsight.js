@@ -90,42 +90,43 @@ function searchScenes() {
     }
   }
 
+  document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+  document.write("<a href=" + finalScenes[0].video + " style='text-decoration:none; color: #FFA728; font-family: Raleway'>");
+  document.write("<img class='sceneImage' height=40% width=40% hspace=20 padding=70px src=" + finalScenes[0].screenshot + ">");
+  document.writeln("<span class='sceneDescription'><font face='Verdana, Arial, Helvetica, sans-serif'><b>" + finalScenes[0].description + "</b></font></span>");
+  document.write("</a>");
 
-
-/*
-  window.onload=searchScenes() {
-    var elem = document.createElement("img");
-    elem.src = '../PrimeVideo/Screenshots/scene3.png';
-    elem.setAttribute("height", "768");
-    elem.setAttribute("width", "1024");
-    elem.setAttribute("alt", "Scene3");
-    document.getElementById("finalScenesLayout").appendChild(elem);
-  }
-*/
-
-
-  for (i = 0; i < finalScenes.length; i++) {
+  for (i = 1; i < finalScenes.length; i++) {
     
     //document.write("<figure><img class='sceneImage' src=" + finalScenes[i].screenshot + "><figcaption class='sceneDescription'>"+finalScenes[i].description+"</figcaption></figure>");
     //document.write("<img class=sceneImage src=" + finalScenes[i].screenshot + "><span class=sceneDescription>"+finalScenes[i].description+"</span>");
     
+/*
+    var scene = document.createElement("img");
+    scene.src = finalScenes[i].screenshot;
+    scene.setAttribute("height", "25px");
+    scene.setAttribute("width", "40px");
+    var scdescription = document.createElement("text");
+    scdescription.innerHTML = finalScenes[i].description;
+    document.getElementById("finalScenesLayout").appendChild(scene);
+    document.getElementById("finalScenesLayout").appendChild(scdescription);
+    document.getElementById("finalScenesLayout").style.visibility = 'visible';
+    document.getElementById("finalScenesLayout").style.display = 'inline-block';
+*/
 
-    document.write("<a href=" + finalScenes[i].video + ">");
-    document.write("<img class='sceneImage' height=30% width=30% src=" + finalScenes[i].screenshot + ">");
-    document.writeln("<span class='sceneDescription'><font face='Verdana, Arial, Helvetica, sans-serif'><b>" + finalScenes[i].description + "</b></font></span>");
-    document.write("</a>");
+     document.write("<a href=" + finalScenes[i].video + " style='text-decoration:none; color: #FFA728;'>");
+     document.write("<img class='sceneImage' height=40% width=40% hspace=20 padding=70px src=" + finalScenes[i].screenshot + ">");
+     document.writeln("<span class='sceneDescription'><font face='Verdana, Arial, Helvetica, sans-serif'><b>" + finalScenes[i].description + "</b></font></span>");
+     document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+     document.write("</a>");
 
-
-    /*var imgdescription = document.createTextNode("descr");
-
-    image.src = finalScenes[i].screenshot;
-    imgdescription.innerHTML = finalScenes[i].description;
-
-    document.getElementById("finalScenesLayout").appendChild(image);
-    document.getElementById("finalScenesLayout").appendChild(imgdescription);
-    */
   }
  
+}
+
+
+function changeBackgroundColor (color) {
+  document.body.style.background = color;
 }
 
 

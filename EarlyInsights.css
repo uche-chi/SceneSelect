@@ -97,15 +97,6 @@ body {
   transition: 0.3s;
 }
 
-.sceneImage {
-  width: 25px;
-  height: 25px;
-}
-
-.sceneDescription {
-  color: red;
-}
-
 .videoWrapper {
   background-color: black;
   width: 100%;

@@ -21,16 +21,15 @@
     <br><br>
 
     <div class="headingsContainer">
-      <h1>An Amazon Original Film</h1>
-      <h2>a short sketch</h2>
+      <h1>The New Best Friend ! </h1>
+      <h2>Director : Arvind &nbsp; &nbsp; &nbsp; Genres : Romance, Drama, Horror, Crime &nbsp; &nbsp; &nbsp; <b>IMDb 9.9</b></h2>
     </div>
-
 
     <form class="navbarForm" style="margin:auto;max-width:200px;float:right; padding-bottom: 20px">
         <input type="text" class="text" id="submit" placeholder="Search a Scene"/>
-        <button class="search" id="searchButton" onclick="searchScenes()"><i class="fa fa-search"></i></button>
+        <button class="search" id="searchButton" onclick="searchScenes(); changeBackgroundColor('#1B232F')"><i class="fa fa-search"></i></button>
     </form>
-
+      
 
 
     <div class="videoWrapper">
@@ -40,15 +39,15 @@
     </div>
 
 
-
     <div class="bottomCreds">
       <a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890" style="text-decoration:none; color:#FFA728">Terms and Privacy Notice</a> &nbsp;
       <a href="https://www.primevideo.com/help/contact-us" style="text-decoration:none; color:#FFA728">Send us feedback</a> &nbsp;
       <a href="https://www.primevideo.com/help/ref=atv_ftr_hp" style="text-decoration:none; color:#FFA728">Help</a> &nbsp;
-      <p style="color:#737373">© 2019, TEAMNAME</p>
+      <p style="color:#737373">© 2019, Logical Nightmare</p>
     </div>
 
-    <div id="finalScenesLayout"></div>
+    <div id="finalScenesLayout" hidden>
+    </div>
 
   <!--
     <img src="../PrimeVideo/Screenshots/scene1.png" onclick="loadVideo1()" value="Load Video 1" />
