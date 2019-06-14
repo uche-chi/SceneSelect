@@ -6,28 +6,31 @@ html {
   margin: 0;
 }
 
+.headingsContainer {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 h1 {
-  position: absolute;
   font-family: 'Martel Sans', sans-serif;
   font-size: 280%;
   color: #fff;
   text-align: center;
-  float: center;
-  margin-top: 10px;
+  margin-bottom: 18px;
 }
 
 h1:hover {
   transform: scale(1.05);
-  color: 	#44A8DB;
+  color:	#44A8DB;
 }
 
 h2 {
-  position: absolute;
   font-weight: 200;
   font-family: 'Raleway', sans-serif;
   font-size: 120%;
-  left: 50%;
-  margin-top: 90px;
+  margin-bottom: 40px;
   color: #fff;
   text-align: center;
 }
@@ -98,13 +101,14 @@ body {
   background-color: black;
   width: 100%;
   position: absolute;
-  margin-top: 175px;
+  top: 25%;
   left: 50%;
   transform:translateX(-50%);
 }
 
 .bottomCreds {
   position: fixed;
-  left: 550px;
-  bottom: 0;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
